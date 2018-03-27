@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Form</title>
+    <h2> BOOKSWAP </h2>
+	<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+
+	<div class="loginbox">
+	<img src="ghoul.jpg" class="avatar">
+		<h1>Login Here</h1>
+			<form>
+			<p>Username</p>
+				<input id="userid" type="text" name="username" placeholder="Enter Username" required>
+			<p>Password</p>
+				<input id="passid" type="text" name="password" placeholder="Enter Password" required>
+				<input id="loginid" onclick="submitClick()" type="submit" name="login" value="Login" target="wall.html">
+				<input id="signupid" type="submit" name="signup" value="Signup" target="signup.html">
+			</form>
+
+	</div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyD3_2hWXFkvdHcA441NOcxKyTxZwBHhhjU",
+      authDomain: "bookswap-745ff.firebaseapp.com",
+      databaseURL: "https://bookswap-745ff.firebaseio.com",
+      projectId: "bookswap-745ff",
+      storageBucket: "bookswap-745ff.appspot.com",
+      messagingSenderId: "731048134448"
+    };
+    firebase.initializeApp(config);
+
+  </script>
+
+  <script src="login.js"></script>
+
+</body>
+
+</html>

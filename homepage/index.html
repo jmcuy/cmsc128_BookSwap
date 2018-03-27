@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+<head>
+
+<form action="action_page.php">
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" id="usernameText" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" id="passText" placeholder="Enter Password" name="psw" required>
+
+    <button id="LoginBtn" onclick="submitClick()" type="submit">Login</button>
+
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD3_2hWXFkvdHcA441NOcxKyTxZwBHhhjU",
+    authDomain: "bookswap-745ff.firebaseapp.com",
+    databaseURL: "https://bookswap-745ff.firebaseio.com",
+    projectId: "bookswap-745ff",
+    storageBucket: "bookswap-745ff.appspot.com",
+    messagingSenderId: "731048134448"
+  };
+  firebase.initializeApp(config);
+
+</script>
+
+<script src="index.js"></script>
+
+</body>
+</html>
