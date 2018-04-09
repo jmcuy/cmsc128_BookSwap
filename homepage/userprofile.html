@@ -1,37 +1,50 @@
 <!DOCTYPE html>
-<meta charset="utf-8"/>
 <html>
 <head>
-<title>User Profile</title>
-	 <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-	<div class = "textlogo">
-    	<img src = "logotext.png">
-	</div>
-	<link rel="stylesheet" type="text/css" href="user.css">
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <title>Test</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="trial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<script type="text/javascript" src="userprofile.js"></script>
-	<div class="userbox">
-		<img src="ghoul.jpg" class="avatar">	
-		<div class="user-info">
-				<p>@username</p>
-				<p>Mocha Mukhang Uson</p>
-				<p name="about"> ABOUT ME </p>
-				<p>Female</p>
-				<p>30 years old</p>
-				<p>From Balintawak, Aswang City of Biringan</p>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo_div">
+                <img id = "logo" src = "logotext.png" />   
+            </div>        
+            <div class = "gen_buttons">
+                <div class="header_btn">
+                     <a id = "sign_out" href = signout.html>Sign Out</a>
+                     <a id = settings href = settings.html>Settings </a>
+                </div>           
+            </div>
+        </div>
 
-				<input type="submit"  id="logout" value="Logout" onclick="log_out()">
+        <div class="container_body">
+            <img id="background_pic" src="nature.jpg">
+            <img id ="profile_pic" src ="yona.jpg">
+            <div id = "basic_info">
+                <div id = "alignment">
+                    <h3 id = "dummy">`</h3>
+                    <h3 id = user_name> Jane Doe </h3>
+                    <h3 id = booksize_label>Books :</h3>
+                    <h3 id = booksize> 0 </h3>
+                </div>
+            </div>
+        </div>
 
-		</div>
-
-			
-	</div>
-
-
-	
+        <div id = user_lib>
+            <ul>
+                <li>1.</li>
+                <li>2.</li>
+                <li>3.</li>
+                <li>4.</li>
+                <li>5.</li>
+                <li>6.</li>
+                <li>7.</li>
+            </ul>
+        </div>
+    </div>
 
 </body>
-
 </html>
