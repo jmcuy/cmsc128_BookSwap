@@ -33,7 +33,7 @@ function log_in(){
 			  var errorCode = error.code;
 			  var errorMessage = error.message;
 	
-			  if(errorCode === 'auth/invalid-email'){
+			  if(errorCode === 'auth/invalid-email' || errorCode ==='auth/user-not-found'){
 			  		alert("ACCOUNT DOESN'T EXIST");
 			  } else {
 			  	alert(errorMessage);
@@ -55,7 +55,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 	  	console.log("user signed in");
 	  	window.location = "userprofile.html";
 	  }
-	});
+});
 function redirect() {
   window.location = "signup.html"
 }

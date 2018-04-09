@@ -107,6 +107,7 @@ function sign_up() {
 					    });
 			         console.log("Create user and sign in Success", user);
 			         alert("User Created")
+			         auth.signOut()
 			   		 }).catch(function(error){
 							console.log(error.message);
 							alert(error.message);
