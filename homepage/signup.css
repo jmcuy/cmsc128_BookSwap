@@ -1,0 +1,141 @@
+
+body{
+    margin: 0;
+	padding: 0;
+	background: url(bg.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #006699;
+	font-family: 'Lato';
+}
+.textlogo{
+	width: 100%
+	height: 15px;
+	background: linear-gradient(to right, rgba(3,29,36,1) 0%, rgba(22,56,66,1) 41%, rgba(50,91,102,1) 100%);
+/*	box-shadow: 0 0 20px #000;*/
+	/*margin:auto;*/
+}
+.textlogo img{
+	width: 200px;
+	height: 40px ;
+	/*position: absolute;*/
+	margin: 5px 5px;
+	/*left: 20px*
+/*	left: calc(50% - 150px);*/
+}
+
+.signbox{
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	margin-bottom: 0;
+	transform: translate(-50%, -50%);
+	width: 450px;
+	background:rgba(0,0,0,.4);
+	padding: 45px;
+	box-sizing: border-box;
+	border: 1px solid rgba(0,0,0,.1);
+	box-shadow: 0 10px 20px rgba(0,0,0,.5);
+	
+}
+.signbox h1{
+	text-align: center;
+	margin: 0 0 30px;
+	padding: 0;
+	color: #fff;
+	letter-spacing: 2px;
+}
+
+.signbox input{
+	padding: 5px;
+	margin-bottom: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid #fff; 
+	background: transparent;
+	color: #fff;
+}
+.signbox input[type="submit"]{
+	padding: 5px;
+	margin-bottom: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border: none;
+	border-radius: 25px;
+	height: 40px;
+	cursor:pointer;
+	color: #fff;
+	margin-bottom: 0;
+	font-size: 18px;
+}
+
+.signbox select{
+	padding: 5px;
+	margin-bottom: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid #fff; 
+	background: transparent;
+	color: #fff;
+}
+.required label:after {
+    color: #e32;
+    content: ' *';
+    display:inline;
+}
+
+.signbox label[id="sex"]{
+
+
+}
+.signbox input:focus ~label,
+.signbox input:valid ~label{
+	left:0;
+	top: -20px;
+}
+.signbox option{
+	background: #fff;
+	color: #000;
+
+}
+.signbox input[id="signup"]{
+
+    margin-bottom: 18px;
+	background: rgb(66,133,244);
+}
+.signbox input[id="login"]{
+	background: #FF5733;
+}
+.signbox input[type="submit"]:hover{
+	background:#00a99d;
+}
+.signbox form div{
+	position: relative;
+}
+.signbox form div label{	
+	color: #fff;
+	position: absolute;
+	left:0;
+	top: -20px;
+/*	pointer-events: none;
+	transition: .5s;*/
+}
+/*.signbox input:focus ~label,
+.signbox input:valid ~label{
+	left:0;
+	top: -20px;
+}*/
+.signbox input:focus,
+.signbox input:valid{
+	border-bottom: 2px solid rgb((66,133,244))
+}

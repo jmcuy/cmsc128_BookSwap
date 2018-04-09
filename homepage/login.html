@@ -1,42 +1,31 @@
 <!DOCTYPE html>
+<meta charset="utf-8"/>
 <html>
 <head>
 <title>Login Form</title>
-    <h2> BOOKSWAP </h2>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <div class = "textlogo">
+    	<img src = "logotext.png">
+	</div>
 	<link rel="stylesheet" type="text/css" href="login.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
+<script type="text/javascript" src="login.js"></script>
 	<div class="loginbox">
-	<img src="ghoul.jpg" class="avatar">
-		<h1>Login Here</h1>
-			<form>
-			<p>Username</p>
-				<input id="userid" type="text" name="username" placeholder="Enter Username" required>
+	<img src="logo.jpg" class="avatar">	
+		<h1>Come back please!</h1>
+			<form onsubmit="return false">
+			<p>Username or Email</p>
+				<input type="text" id="user" placeholder="Enter Username" required="">
 			<p>Password</p>
-				<input id="passid" type="text" name="password" placeholder="Enter Password" required>
-				<input id="loginid" onclick="submitClick()" type="submit" name="login" value="Login" target="wall.html">
-				<input id="signupid" type="submit" name="signup" value="Signup" target="signup.html">
+				<input type="password" id="password" placeholder="Enter Password" required="">
+				<input type="submit" name="login" value="Login" onclick="log_in()">
+				<input type="submit" name="signup" value="Sign Up" onclick="redirect()">
 			</form>
 
 	</div>
-
-  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyD3_2hWXFkvdHcA441NOcxKyTxZwBHhhjU",
-      authDomain: "bookswap-745ff.firebaseapp.com",
-      databaseURL: "https://bookswap-745ff.firebaseio.com",
-      projectId: "bookswap-745ff",
-      storageBucket: "bookswap-745ff.appspot.com",
-      messagingSenderId: "731048134448"
-    };
-    firebase.initializeApp(config);
-
-  </script>
-
-  <script src="login.js"></script>
+	
 
 </body>
 

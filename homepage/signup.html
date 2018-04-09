@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html>
+<head>
+<title>Sign Up Form</title>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+	<link rel="stylesheet" type="text/css" href="signup.css">
+	<div class = "textlogo">
+    	<img src = "logotext.png">
+	</div>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<script type="text/javascript" src="signup.js"></script>
+	<div class="signbox">
+		<h1>We need you...</h1>
+		<form  onsubmit="return false" >
+			<div>
+				<input type="text" id="user_fname" placeholder="Enter full name here" required="requireds">	
+				<label>Full Name</label>
+			</div>
+			<div>
+				<input type="text" id="user_name"  placeholder="Enter a username" required="">				
+				<label>Username</label>
+			</div>
+			<div>
+				<input type="email" id = "user_email" pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}"
+				placeholder="Enter your email address"  title="skolar@up.edu.ph" required="">
+				<label>Email</label>
+			</div>
+			<div>
+				<input type="text" id = "user_address" placeholder="Enter your full address" required="">
+				<label>Address</label>
+			</div>
+			
+			<div>
+				<select name="sex" id = "user_sex" required="" >
+					<option value="" disabled selected hidden>Please select your sex</option>
+					<option value="1">Female</option>
+					<option value="2">Male</option>	
+				</select>
+				<label name="sex">Sex</label>	
+			</div>
+			<div>
+				<input type="text" pattern="^(09|\+639)\d{9}$"  id = "user_num" placeholder="Enter mobile number" title = "09xxxxxxxxx or +639xxxxxxxxx" required="">
+				
+				<label>Mobile</label>
+			</div>
+			<div>
+				<input type="password" id = "user_pass"  pattern=".{6,}" placeholder="Enter 6 character password" title="must be 6 characters or more." required="">
+				<label>Password</label>
+			</div>
+			<div>
+				<input type="password" id = "user_repass"  pattern=".{6,}" title="must be 6 characters or more." placeholder="Verify password." required="">
+				<label>Re-enter password</label>
+			</div>
+			<input type="submit" id="signup"  value="Sign Up" onclick="sign_up()">
+			<input type="submit" id="login" value="Login" onclick="redirect()">
+		</form>
+
+	</div>
+	
+
+</body>
+
+</html>
